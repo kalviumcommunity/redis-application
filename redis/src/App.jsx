@@ -34,14 +34,13 @@ function App() {
     <div className="App">
       <h1>User Management</h1>
 
-      {/* Add User Form */}
       <UserForm addUser={addUser} />
 
-      {/* Show added user */}
+
       {addedUser && (
         <div>
           <h3>User Added Successfully:</h3>
-          {/* <p>ID: {addedUser.id}</p> */}
+
           <p>Name: {addedUser.name}</p>
           <p>Email: {addedUser.email}</p>
         </div>
@@ -50,11 +49,11 @@ function App() {
 
       <SearchUser searchUser={searchUser} />
 
-      {/* Show searched user */}
+
       {searchedUser ? (
         <div>
           <h3>User Found:</h3>
-          {/* <p>ID: {searchedUser.id}</p> */}
+
           <p>Name: {searchedUser.name}</p>
           <p>Email: {searchedUser.email}</p>
         </div>
